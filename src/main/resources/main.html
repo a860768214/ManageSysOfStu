@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>学生管理系统</title>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.bootcss.com/qs/6.6.0/qs.min.js"></script>
+<!-- 引入样式 -->
+<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+<!-- 引入组件库 -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="./css/components.min.css" rel="stylesheet" type="text/css">
+<link href="./css/login.css" rel="stylesheet" type="text/css">
+
+<body>
+<div id="app">
+<el-container style="height: 1080px; border: 1px solid #eeeeee">
+    <el-aside width="200px" style="background-color: rgb(238, 241, 246)">
+        <el-menu :default-openeds="['1', '3']">
+            <el-submenu index="1">
+                <template slot="title"><i class="el-icon-message"></i>专业信息</template>
+                <el-menu-item-group>
+                    <el-menu-item index="1-1" @click="listDept">专业列表</el-menu-item>
+                </el-menu-item-group>
+            </el-submenu>
+            <el-submenu index="2">
+                <template slot="title"><i class="el-icon-menu"></i>学生信息</template>
+                <el-menu-item-group>
+                    <el-menu-item index="2-1" @click="listStudent">学生列表</el-menu-item>
+                </el-menu-item-group>
+            </el-submenu>
+            <el-submenu index="3">
+                <template slot="title"><i class="el-icon-setting"></i>课程信息</template>
+                <el-menu-item-group>
+                    <el-menu-item index="3-1" @click="listClass">课程列表</el-menu-item>
+                    </el-menu-item-group>
+            </el-submenu>
+            <el-submenu index="3">
+                <template slot="title"><i class="el-icon-setting"></i>学生成绩</template>
+                <el-menu-item-group>
+                    <el-menu-item index="3-1" @click="listGrade">成绩列表</el-menu-item>
+                </el-menu-item-group>
+            </el-submenu>
+        </el-menu>
+    </el-aside>
+
+    <el-container>
+        <el-header style="text-align: right; font-size: 12px">
+            <el-dropdown>
+                <i class="el-icon-setting" style="margin-right: 15px"></i>
+                <el-dropdown-menu slot="dropdown">
+                </el-dropdown-menu>
+            </el-dropdown>
+            <span>hsy</span>
+        </el-header>
+
+        <el-main v-if="showDepartment">
+<!--            专业-->
+            <div class="content">
+                <h3 class="form-title">专业列表</h3>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>专业ID</th>
+                            <th>专业名称</th>
+                        </tr>
+                        <tr v-for="(item,index) in department">
+                            <th>{{item.departmentId}}</th>
+                            <th>{{item.departmentName}}</th>
+
+                            <th><el-button type="primary" @click="changeUpdateState">修改</el-button></th>
+                            <th>
+                                <el-input v-model="updateDeptName[index]" placeholder="请输入修改后专业名称" style="width: auto" v-if="showDeptUpdate"></el-input >
+                                <el-button type="primary" round @click="updateDept(index)" v-if="showDeptUpdate">提交</el-button>
+                            </th>
+
+                            <th><el-button type="danger" @click="deleteDept(index)">删除</el-button></th>
+                            <th><el-button type="info" @click="showTotalNum(item.departmentName)">查看人数</el-button></th>
+                        </tr>
+
+                            <el-input v-model="newDeptName" placeholder="请输入专业名称" style="width: auto"></el-input >
+                            <el-button type="primary" round @click="insertDept">新增专业</el-button>
+
+                        </thead>
+                        <tbody id="container1">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </el-main>
+        <!--            专业-->
+
+        <!--            学生-->
+        <el-main v-if="showStudent">
+            <div class="content">
+                <h3 class="form-title">学生列表</h3>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>学生ID</th>
+                            <th>学生姓名</th>
+                            <th>专业</th>
+                        </tr>
+                        <tr v-for="(item,index) in student">
+                            <th>{{item.studentId}}</th>
+                            <th>{{item.studentName}}</th>
+                            <th>{{item.dept}}</th>
+
+                            <th><el-button type="primary" @click="changeStudentUpdateState">修改</el-button></th>
+                            <th>
+                                <el-input v-model="updateStudentName[index]" placeholder="请输入修改后学生姓名" style="width: auto" v-if="showStudentUpdate"></el-input >
+                                <el-button type="primary" round @click="updateStudent(index)" v-if="showStudentUpdate">提交</el-button>
+                            </th>
+
+                            <th><el-button type="danger" @click="deleteStudent(index)">删除</el-button></th>
+                        </tr>
+
+                            <el-input v-model="newStudentName" placeholder="请输入学生姓名" style="width: auto"></el-input >
+                            <el-input v-model="newStudentDept" placeholder="请输入专业" style="width: auto"></el-input >
+                            <el-button type="primary" round @click="insertStudent">新增学生</el-button>
+
+                        </thead>
+                        <tbody id="container2">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </el-main>
+        <!--            学生-->
+
+        <!--            课程-->
+        <el-main v-if="showClass">
+            <div class="content">
+                <h3 class="form-title">课程列表</h3>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>课程ID</th>
+                            <th>课程名称</th>
+                        </tr>
+                        <tr v-for="(item,index) in lesson">
+                            <th>{{item.classId}}</th>
+                            <th>{{item.className}}</th>
+
+                            <th><el-button type="primary" @click="changeClassUpdateState">修改</el-button></th>
+                            <th>
+                                <el-input v-model="updateClassName[index]" placeholder="请输入修改后课程名称" style="width: auto" v-if="showClassUpdate"></el-input >
+                                <el-button type="primary" round @click="updateClass(index)" v-if="showClassUpdate">提交</el-button>
+                            </th>
+
+                            <th><el-button type="danger" @click="deleteClass(index)">删除</el-button></th>
+
+                            <th><el-button type="info"  @click="changeClassGradeState();getclassgrade(item.className)">查看选修者成绩</el-button></th>
+
+                        </tr>
+
+                            <el-input v-model="newClassName" placeholder="请输入课程名称" style="width: auto"></el-input >
+                            <el-button type="primary" round @click="insertClass">新增课程</el-button>
+
+                        </thead>
+                        <tbody id="container3">
+
+                        </tbody>
+                    </table>
+                    <el-card class="box-card" v-if="showClassGrade">
+                        <div slot="header" class="clearfix">
+                            <span>{{gradeClassName}}</span>
+                        </div>
+                        <div v-for="t in classGrade" class="text item">
+                            <el-tag>{{ t.sname}}</el-tag>
+                            <el-tag type="success">{{t.grade}}</el-tag>
+                        </div>
+                    </el-card>
+                </div>
+            </div>
+        </el-main>
+        <!--            课程-->
+
+<!--        成绩-->
+        <el-main v-if="showGrade">
+            <div class="content">
+                <h3 class="form-title">成绩列表</h3>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>学生ID</th>
+                            <th>学生姓名</th>
+                            <th>专业课程</th>
+                            <th>成绩</th>
+                        </tr>
+                        <tr v-for="(item,index) in grade">
+                            <th>{{item.studentInfoDO.studentId}}</th>
+                            <th>{{item.studentInfoDO.studentName}}</th>
+                            <th>{{item.className}}</th>
+                            <th>{{item.classGrade}}</th>
+
+                            <th><el-button type="primary" @click="changeGradeUpdateState">修改成绩</el-button></th>
+                            <th>
+                                <el-input v-model="updateGradeName[index]" placeholder="请输入修改后的成绩" style="width: auto" v-if="showGradeUpdate"></el-input >
+                                <el-button type="primary" round @click="updateGrade(index)" v-if="showGradeUpdate">提交</el-button>
+                            </th>
+
+                            <th><el-button type="danger" @click="deleteGrade(index)">删除</el-button></th>
+                        </tr>
+
+                        <el-input v-model="StudentId" placeholder="请输入学生ID" style="width: auto"></el-input >
+                        <el-input v-model="newClassName" placeholder="请输入课程名称" style="width: auto"></el-input >
+                        <el-input v-model="newGradeName" placeholder="请输入成绩" style="width: auto"></el-input >
+                        <el-button type="primary" round @click="insertGrade">新增成绩</el-button>
+
+                        </thead>
+                        <tbody id="container4">
+
+                        </tbody>
+                    </table>
+                    <el-input v-model="avgClassName" placeholder="请输入要查询平均成绩的课程" style="width: 300px"></el-input >
+                    <el-button type="primary" round @click="listAvgGrade">查询</el-button>
+                    <el-card class="box-card" v-if="showAvgGrade">
+                        <div slot="header" class="clearfix">
+                            <span>{{avgClassName}}</span>
+                        </div>
+
+                        <div v-for="t in avgGradeByDept" class="text item">
+                            <el-tag>{{ t.dname}}</el-tag>
+                            <el-tag type="success">{{t.avgGrade}}</el-tag>
+                        </div>
+                    </el-card>
+                </div>
+            </div>
+        </el-main>
+<!--        成绩-->
+    </el-container>
+</el-container>
+</div>
+<style>
+    .text {
+        font-size: 14px;
+    }
+
+    .item {
+        margin-bottom: 18px;
+    }
+
+    .clearfix:before,
+    .clearfix:after {
+        display: table;
+        content: "";
+    }
+    .clearfix:after {
+        clear: both
+    }
+
+    .box-card {
+        width: 480px;
+    }
+</style>
+<style>
+    .el-header {
+        background-color: #B3C0D1;
+        color: #333;
+        line-height: 60px;
+    }
+
+    .el-aside {
+        color: #333;
+    }
+</style>
+
+<script src="./js/main.js"></script>
+
+</body>
+</html>
