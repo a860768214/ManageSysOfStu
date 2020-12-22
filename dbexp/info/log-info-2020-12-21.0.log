@@ -1,0 +1,389 @@
+2020-12-21 00:13:55.038 [http-nio-8090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-21 00:13:55.046 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-21 00:13:55.046 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2020-12-21 00:13:55.127 [http-nio-8090-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-21 10:23:22.521 [main] INFO  com.hsy.dbexp.DbexpApplication - Starting DbexpApplication using Java 1.8.0_231 on LAPTOP-GDCB5BAF with PID 12332 (F:\JavaProjects\dbexp\target\classes started by HSY in F:\JavaProjects\dbexp)
+2020-12-21 10:23:22.524 [main] INFO  com.hsy.dbexp.DbexpApplication - No active profile set, falling back to default profiles: default
+2020-12-21 10:23:24.509 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-21 10:23:24.515 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-21 10:23:24.516 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-21 10:23:24.516 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-21 10:23:24.639 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-21 10:23:24.639 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1927 ms
+2020-12-21 10:23:25.254 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-21 10:23:25.494 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-21 10:23:25.517 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-21 10:23:25.533 [main] INFO  com.hsy.dbexp.DbexpApplication - Started DbexpApplication in 4.08 seconds (JVM running for 5.439)
+2020-12-21 10:23:33.926 [http-nio-8090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-21 10:23:33.926 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-21 10:23:33.927 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2020-12-21 10:23:49.871 [http-nio-8090-exec-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-21 10:55:00.495 [main] INFO  com.hsy.dbexp.DbexpApplication - Starting DbexpApplication using Java 1.8.0_231 on LAPTOP-GDCB5BAF with PID 8768 (F:\JavaProjects\dbexp\target\classes started by HSY in F:\JavaProjects\dbexp)
+2020-12-21 10:55:00.497 [main] INFO  com.hsy.dbexp.DbexpApplication - No active profile set, falling back to default profiles: default
+2020-12-21 10:55:01.382 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-21 10:55:01.388 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-21 10:55:01.389 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-21 10:55:01.389 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-21 10:55:01.456 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-21 10:55:01.456 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 904 ms
+2020-12-21 10:55:01.778 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-21 10:55:01.934 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-21 10:55:02.008 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-21 10:55:02.015 [main] INFO  com.hsy.dbexp.DbexpApplication - Started DbexpApplication in 2.024 seconds (JVM running for 2.846)
+2020-12-21 10:55:14.605 [http-nio-8090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-21 10:55:14.605 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-21 10:55:14.606 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2020-12-21 10:55:14.661 [http-nio-8090-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-21 16:49:42.633 [main] INFO  com.hsy.dbexp.DbexpApplication - Starting DbexpApplication using Java 1.8.0_231 on LAPTOP-GDCB5BAF with PID 28468 (F:\JavaProjects\dbexp\target\classes started by HSY in F:\JavaProjects\dbexp)
+2020-12-21 16:49:42.652 [main] INFO  com.hsy.dbexp.DbexpApplication - No active profile set, falling back to default profiles: default
+2020-12-21 16:49:44.842 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-21 16:49:44.863 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-21 16:49:44.863 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-21 16:49:44.863 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-21 16:49:44.953 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-21 16:49:44.953 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2080 ms
+2020-12-21 16:49:45.631 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-21 16:49:45.885 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-21 16:49:45.935 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-21 16:49:45.975 [main] INFO  com.hsy.dbexp.DbexpApplication - Started DbexpApplication in 4.722 seconds (JVM running for 6.135)
+2020-12-21 16:49:46.091 [http-nio-8090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-21 16:49:46.092 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-21 16:49:46.092 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2020-12-21 16:49:46.274 [http-nio-8090-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-21 17:16:35.295 [main] INFO  com.hsy.dbexp.DbexpApplication - Starting DbexpApplication using Java 1.8.0_231 on LAPTOP-GDCB5BAF with PID 10952 (F:\JavaProjects\dbexp\target\classes started by HSY in F:\JavaProjects\dbexp)
+2020-12-21 17:16:35.298 [main] INFO  com.hsy.dbexp.DbexpApplication - No active profile set, falling back to default profiles: default
+2020-12-21 17:16:36.135 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-21 17:16:36.141 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-21 17:16:36.142 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-21 17:16:36.142 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-21 17:16:36.207 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-21 17:16:36.207 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 880 ms
+2020-12-21 17:16:36.561 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-21 17:16:36.702 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-21 17:16:36.782 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-21 17:16:36.789 [main] INFO  com.hsy.dbexp.DbexpApplication - Started DbexpApplication in 1.87 seconds (JVM running for 2.634)
+2020-12-21 17:16:41.622 [http-nio-8090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-21 17:16:41.623 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-21 17:16:41.623 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2020-12-21 17:17:57.817 [main] INFO  com.hsy.dbexp.DbexpApplication - Starting DbexpApplication using Java 1.8.0_231 on LAPTOP-GDCB5BAF with PID 12008 (F:\JavaProjects\dbexp\target\classes started by HSY in F:\JavaProjects\dbexp)
+2020-12-21 17:17:57.819 [main] INFO  com.hsy.dbexp.DbexpApplication - No active profile set, falling back to default profiles: default
+2020-12-21 17:17:58.551 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-21 17:17:58.557 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-21 17:17:58.557 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-21 17:17:58.557 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-21 17:17:58.621 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-21 17:17:58.621 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 764 ms
+2020-12-21 17:17:58.914 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-21 17:17:59.120 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-21 17:17:59.133 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-21 17:17:59.140 [main] INFO  com.hsy.dbexp.DbexpApplication - Started DbexpApplication in 1.662 seconds (JVM running for 2.41)
+2020-12-21 17:18:06.901 [http-nio-8090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-21 17:18:06.902 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-21 17:18:06.902 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2020-12-21 17:18:06.963 [http-nio-8090-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-21 19:06:27.676 [main] INFO  com.hsy.dbexp.DbexpApplication - Starting DbexpApplication using Java 1.8.0_231 on LAPTOP-GDCB5BAF with PID 24788 (F:\JavaProjects\dbexp\target\classes started by HSY in F:\JavaProjects\dbexp)
+2020-12-21 19:06:27.680 [main] INFO  com.hsy.dbexp.DbexpApplication - No active profile set, falling back to default profiles: default
+2020-12-21 19:06:28.511 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-21 19:06:28.517 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-21 19:06:28.518 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-21 19:06:28.518 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-21 19:06:28.584 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-21 19:06:28.585 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 844 ms
+2020-12-21 19:06:28.899 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-21 19:06:29.077 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-21 19:06:29.091 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-21 19:06:29.098 [main] INFO  com.hsy.dbexp.DbexpApplication - Started DbexpApplication in 1.858 seconds (JVM running for 2.663)
+2020-12-21 19:06:38.001 [http-nio-8090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-21 19:06:38.001 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-21 19:06:38.002 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2020-12-21 19:06:38.056 [http-nio-8090-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-21 19:20:25.603 [main] INFO  com.hsy.dbexp.DbexpApplication - Starting DbexpApplication using Java 1.8.0_231 on LAPTOP-GDCB5BAF with PID 16360 (F:\JavaProjects\dbexp\target\classes started by HSY in F:\JavaProjects\dbexp)
+2020-12-21 19:20:25.606 [main] INFO  com.hsy.dbexp.DbexpApplication - No active profile set, falling back to default profiles: default
+2020-12-21 19:20:26.420 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-21 19:20:26.425 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-21 19:20:26.427 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-21 19:20:26.427 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-21 19:20:26.492 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-21 19:20:26.492 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 837 ms
+2020-12-21 19:20:26.803 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-21 19:20:26.950 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-21 19:20:27.007 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-21 19:20:27.014 [main] INFO  com.hsy.dbexp.DbexpApplication - Started DbexpApplication in 1.826 seconds (JVM running for 2.613)
+2020-12-21 19:20:29.328 [http-nio-8090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-21 19:20:29.328 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-21 19:20:29.329 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2020-12-21 19:21:24.851 [main] INFO  com.hsy.dbexp.DbexpApplication - Starting DbexpApplication using Java 1.8.0_231 on LAPTOP-GDCB5BAF with PID 11072 (F:\JavaProjects\dbexp\target\classes started by HSY in F:\JavaProjects\dbexp)
+2020-12-21 19:21:24.853 [main] INFO  com.hsy.dbexp.DbexpApplication - No active profile set, falling back to default profiles: default
+2020-12-21 19:21:25.652 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-21 19:21:25.658 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-21 19:21:25.658 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-21 19:21:25.658 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-21 19:21:25.722 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-21 19:21:25.722 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 834 ms
+2020-12-21 19:21:26.014 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-21 19:21:26.156 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-21 19:21:26.209 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-21 19:21:26.216 [main] INFO  com.hsy.dbexp.DbexpApplication - Started DbexpApplication in 1.704 seconds (JVM running for 2.425)
+2020-12-21 19:21:28.931 [http-nio-8090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-21 19:21:28.932 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-21 19:21:28.932 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2020-12-21 19:21:28.982 [http-nio-8090-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-21 20:56:58.375 [main] INFO  com.hsy.dbexp.DbexpApplication - Starting DbexpApplication using Java 1.8.0_231 on LAPTOP-GDCB5BAF with PID 19632 (F:\JavaProjects\dbexp\target\classes started by HSY in F:\JavaProjects\dbexp)
+2020-12-21 20:56:58.378 [main] INFO  com.hsy.dbexp.DbexpApplication - No active profile set, falling back to default profiles: default
+2020-12-21 20:56:59.209 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-21 20:56:59.214 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-21 20:56:59.215 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-21 20:56:59.215 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-21 20:56:59.280 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-21 20:56:59.280 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 860 ms
+2020-12-21 20:56:59.590 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-21 20:56:59.742 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-21 20:56:59.801 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-21 20:56:59.808 [main] INFO  com.hsy.dbexp.DbexpApplication - Started DbexpApplication in 1.813 seconds (JVM running for 2.578)
+2020-12-21 21:00:49.186 [http-nio-8090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-21 21:00:49.187 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-21 21:00:49.188 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2020-12-21 21:00:49.247 [http-nio-8090-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-21 22:26:10.168 [main] INFO  com.hsy.dbexp.DbexpApplication - Starting DbexpApplication using Java 1.8.0_231 on LAPTOP-GDCB5BAF with PID 22828 (F:\JavaProjects\dbexp\target\classes started by HSY in F:\JavaProjects\dbexp)
+2020-12-21 22:26:10.171 [main] INFO  com.hsy.dbexp.DbexpApplication - No active profile set, falling back to default profiles: default
+2020-12-21 22:26:10.959 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-21 22:26:10.965 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-21 22:26:10.965 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-21 22:26:10.965 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-21 22:26:11.034 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-21 22:26:11.034 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 819 ms
+2020-12-21 22:26:11.455 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-21 22:26:11.611 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-21 22:26:11.692 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-21 22:26:11.701 [main] INFO  com.hsy.dbexp.DbexpApplication - Started DbexpApplication in 1.986 seconds (JVM running for 2.758)
+2020-12-21 22:26:19.550 [http-nio-8090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-21 22:26:19.551 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-21 22:26:19.552 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2020-12-21 22:26:19.614 [http-nio-8090-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-21 22:33:37.186 [main] INFO  com.hsy.dbexp.DbexpApplication - Starting DbexpApplication using Java 1.8.0_231 on LAPTOP-GDCB5BAF with PID 24924 (F:\JavaProjects\dbexp\target\classes started by HSY in F:\JavaProjects\dbexp)
+2020-12-21 22:33:37.188 [main] INFO  com.hsy.dbexp.DbexpApplication - No active profile set, falling back to default profiles: default
+2020-12-21 22:33:38.028 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-21 22:33:38.034 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-21 22:33:38.034 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-21 22:33:38.034 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-21 22:33:38.105 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-21 22:33:38.106 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 875 ms
+2020-12-21 22:33:38.427 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-21 22:33:38.582 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-21 22:33:38.642 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-21 22:33:38.650 [main] INFO  com.hsy.dbexp.DbexpApplication - Started DbexpApplication in 1.829 seconds (JVM running for 2.549)
+2020-12-21 22:34:01.651 [http-nio-8090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-21 22:34:01.651 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-21 22:34:01.651 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2020-12-21 22:35:13.048 [main] INFO  com.hsy.dbexp.DbexpApplication - Starting DbexpApplication using Java 1.8.0_231 on LAPTOP-GDCB5BAF with PID 18344 (F:\JavaProjects\dbexp\target\classes started by HSY in F:\JavaProjects\dbexp)
+2020-12-21 22:35:13.050 [main] INFO  com.hsy.dbexp.DbexpApplication - No active profile set, falling back to default profiles: default
+2020-12-21 22:35:13.842 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-21 22:35:13.848 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-21 22:35:13.848 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-21 22:35:13.849 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-21 22:35:13.919 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-21 22:35:13.919 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 826 ms
+2020-12-21 22:35:14.234 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-21 22:35:14.386 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-21 22:35:14.443 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-21 22:35:14.450 [main] INFO  com.hsy.dbexp.DbexpApplication - Started DbexpApplication in 1.803 seconds (JVM running for 2.625)
+2020-12-21 22:35:16.587 [http-nio-8090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-21 22:35:16.587 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-21 22:35:16.588 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2020-12-21 22:35:16.641 [http-nio-8090-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-21 22:36:12.914 [main] INFO  com.hsy.dbexp.DbexpApplication - Starting DbexpApplication using Java 1.8.0_231 on LAPTOP-GDCB5BAF with PID 1756 (F:\JavaProjects\dbexp\target\classes started by HSY in F:\JavaProjects\dbexp)
+2020-12-21 22:36:12.917 [main] INFO  com.hsy.dbexp.DbexpApplication - No active profile set, falling back to default profiles: default
+2020-12-21 22:36:13.675 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-21 22:36:13.681 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-21 22:36:13.681 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-21 22:36:13.681 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-21 22:36:13.746 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-21 22:36:13.746 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 787 ms
+2020-12-21 22:36:14.043 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-21 22:36:14.180 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-21 22:36:14.235 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-21 22:36:14.242 [main] INFO  com.hsy.dbexp.DbexpApplication - Started DbexpApplication in 1.673 seconds (JVM running for 2.361)
+2020-12-21 22:36:16.756 [http-nio-8090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-21 22:36:16.756 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-21 22:36:16.756 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2020-12-21 22:36:16.811 [http-nio-8090-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-21 22:36:28.088 [main] INFO  com.hsy.dbexp.DbexpApplication - Starting DbexpApplication using Java 1.8.0_231 on LAPTOP-GDCB5BAF with PID 27188 (F:\JavaProjects\dbexp\target\classes started by HSY in F:\JavaProjects\dbexp)
+2020-12-21 22:36:28.091 [main] INFO  com.hsy.dbexp.DbexpApplication - No active profile set, falling back to default profiles: default
+2020-12-21 22:36:28.853 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-21 22:36:28.860 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-21 22:36:28.861 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-21 22:36:28.861 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-21 22:36:28.934 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-21 22:36:28.934 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 803 ms
+2020-12-21 22:36:29.380 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-21 22:36:29.581 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-21 22:36:29.601 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-21 22:36:29.609 [main] INFO  com.hsy.dbexp.DbexpApplication - Started DbexpApplication in 1.915 seconds (JVM running for 3.675)
+2020-12-21 22:36:32.155 [http-nio-8090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-21 22:36:32.155 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-21 22:36:32.156 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2020-12-21 22:36:40.862 [http-nio-8090-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-21 22:37:07.678 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-21 22:37:07.682 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2020-12-21 22:39:11.815 [main] INFO  com.hsy.dbexp.DbexpApplication - Starting DbexpApplication using Java 1.8.0_231 on LAPTOP-GDCB5BAF with PID 5736 (F:\JavaProjects\dbexp\target\classes started by HSY in F:\JavaProjects\dbexp)
+2020-12-21 22:39:11.818 [main] INFO  com.hsy.dbexp.DbexpApplication - No active profile set, falling back to default profiles: default
+2020-12-21 22:39:12.574 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-21 22:39:12.580 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-21 22:39:12.580 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-21 22:39:12.580 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-21 22:39:12.644 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-21 22:39:12.644 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 771 ms
+2020-12-21 22:39:12.936 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-21 22:39:13.135 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-21 22:39:13.154 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-21 22:39:13.163 [main] INFO  com.hsy.dbexp.DbexpApplication - Started DbexpApplication in 1.774 seconds (JVM running for 2.586)
+2020-12-21 22:39:15.465 [http-nio-8090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-21 22:39:15.465 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-21 22:39:15.466 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2020-12-21 22:39:15.520 [http-nio-8090-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-21 22:40:36.850 [main] INFO  com.hsy.dbexp.DbexpApplication - Starting DbexpApplication using Java 1.8.0_231 on LAPTOP-GDCB5BAF with PID 2188 (F:\JavaProjects\dbexp\target\classes started by HSY in F:\JavaProjects\dbexp)
+2020-12-21 22:40:36.853 [main] INFO  com.hsy.dbexp.DbexpApplication - No active profile set, falling back to default profiles: default
+2020-12-21 22:40:37.590 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-21 22:40:37.596 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-21 22:40:37.597 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-21 22:40:37.597 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-21 22:40:37.665 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-21 22:40:37.665 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 765 ms
+2020-12-21 22:40:37.970 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-21 22:40:38.112 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-21 22:40:38.169 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-21 22:40:38.176 [main] INFO  com.hsy.dbexp.DbexpApplication - Started DbexpApplication in 1.685 seconds (JVM running for 2.416)
+2020-12-21 22:40:39.596 [http-nio-8090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-21 22:40:39.596 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-21 22:40:39.597 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2020-12-21 22:40:39.651 [http-nio-8090-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-21 22:42:13.423 [main] INFO  com.hsy.dbexp.DbexpApplication - Starting DbexpApplication using Java 1.8.0_231 on LAPTOP-GDCB5BAF with PID 6672 (F:\JavaProjects\dbexp\target\classes started by HSY in F:\JavaProjects\dbexp)
+2020-12-21 22:42:13.426 [main] INFO  com.hsy.dbexp.DbexpApplication - No active profile set, falling back to default profiles: default
+2020-12-21 22:42:14.267 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-21 22:42:14.275 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-21 22:42:14.276 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-21 22:42:14.276 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-21 22:42:14.349 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-21 22:42:14.350 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 879 ms
+2020-12-21 22:42:14.667 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-21 22:42:14.817 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-21 22:42:14.871 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-21 22:42:14.878 [main] INFO  com.hsy.dbexp.DbexpApplication - Started DbexpApplication in 1.84 seconds (JVM running for 2.609)
+2020-12-21 22:42:29.626 [http-nio-8090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-21 22:42:29.626 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-21 22:42:29.627 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2020-12-21 22:42:29.690 [http-nio-8090-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-21 22:45:00.292 [main] INFO  com.hsy.dbexp.DbexpApplication - Starting DbexpApplication using Java 1.8.0_231 on LAPTOP-GDCB5BAF with PID 24196 (F:\JavaProjects\dbexp\target\classes started by HSY in F:\JavaProjects\dbexp)
+2020-12-21 22:45:00.294 [main] INFO  com.hsy.dbexp.DbexpApplication - No active profile set, falling back to default profiles: default
+2020-12-21 22:45:01.065 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-21 22:45:01.070 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-21 22:45:01.071 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-21 22:45:01.071 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-21 22:45:01.133 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-21 22:45:01.133 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 799 ms
+2020-12-21 22:45:01.433 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-21 22:45:01.570 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-21 22:45:01.627 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-21 22:45:01.633 [main] INFO  com.hsy.dbexp.DbexpApplication - Started DbexpApplication in 1.685 seconds (JVM running for 2.375)
+2020-12-21 22:49:43.480 [http-nio-8090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-21 22:49:43.480 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-21 22:49:43.481 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2020-12-21 22:49:43.538 [http-nio-8090-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-21 22:49:56.611 [main] INFO  com.hsy.dbexp.DbexpApplication - Starting DbexpApplication using Java 1.8.0_231 on LAPTOP-GDCB5BAF with PID 18928 (F:\JavaProjects\dbexp\target\classes started by HSY in F:\JavaProjects\dbexp)
+2020-12-21 22:49:56.614 [main] INFO  com.hsy.dbexp.DbexpApplication - No active profile set, falling back to default profiles: default
+2020-12-21 22:49:57.403 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-21 22:49:57.409 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-21 22:49:57.409 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-21 22:49:57.409 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-21 22:49:57.474 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-21 22:49:57.474 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 805 ms
+2020-12-21 22:49:57.793 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-21 22:49:57.941 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-21 22:49:58.002 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-21 22:49:58.009 [main] INFO  com.hsy.dbexp.DbexpApplication - Started DbexpApplication in 1.772 seconds (JVM running for 2.521)
+2020-12-21 22:50:00.455 [http-nio-8090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-21 22:50:00.455 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-21 22:50:00.456 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2020-12-21 22:50:00.517 [http-nio-8090-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-21 22:51:11.743 [main] INFO  com.hsy.dbexp.DbexpApplication - Starting DbexpApplication using Java 1.8.0_231 on LAPTOP-GDCB5BAF with PID 29020 (F:\JavaProjects\dbexp\target\classes started by HSY in F:\JavaProjects\dbexp)
+2020-12-21 22:51:11.746 [main] INFO  com.hsy.dbexp.DbexpApplication - No active profile set, falling back to default profiles: default
+2020-12-21 22:51:12.449 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-21 22:51:12.455 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-21 22:51:12.455 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-21 22:51:12.455 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-21 22:51:12.519 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-21 22:51:12.519 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 729 ms
+2020-12-21 22:51:12.827 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-21 22:51:12.965 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-21 22:51:13.018 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-21 22:51:13.024 [main] INFO  com.hsy.dbexp.DbexpApplication - Started DbexpApplication in 1.659 seconds (JVM running for 2.568)
+2020-12-21 22:51:19.968 [http-nio-8090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-21 22:51:19.969 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-21 22:51:19.969 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2020-12-21 22:51:20.031 [http-nio-8090-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-21 22:51:28.646 [main] INFO  com.hsy.dbexp.DbexpApplication - Starting DbexpApplication using Java 1.8.0_231 on LAPTOP-GDCB5BAF with PID 22208 (F:\JavaProjects\dbexp\target\classes started by HSY in F:\JavaProjects\dbexp)
+2020-12-21 22:51:28.650 [main] INFO  com.hsy.dbexp.DbexpApplication - No active profile set, falling back to default profiles: default
+2020-12-21 22:51:29.435 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-21 22:51:29.442 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-21 22:51:29.443 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-21 22:51:29.443 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-21 22:51:29.512 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-21 22:51:29.513 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 810 ms
+2020-12-21 22:51:29.870 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-21 22:51:30.075 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-21 22:51:30.092 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-21 22:51:30.099 [main] INFO  com.hsy.dbexp.DbexpApplication - Started DbexpApplication in 1.955 seconds (JVM running for 2.899)
+2020-12-21 22:51:35.176 [http-nio-8090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-21 22:51:35.176 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-21 22:51:35.177 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2020-12-21 22:51:40.680 [http-nio-8090-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-21 22:52:11.342 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-21 22:52:11.345 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2020-12-21 22:52:18.921 [main] INFO  com.hsy.dbexp.DbexpApplication - Starting DbexpApplication using Java 1.8.0_231 on LAPTOP-GDCB5BAF with PID 18808 (F:\JavaProjects\dbexp\target\classes started by HSY in F:\JavaProjects\dbexp)
+2020-12-21 22:52:18.924 [main] INFO  com.hsy.dbexp.DbexpApplication - No active profile set, falling back to default profiles: default
+2020-12-21 22:52:19.682 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-21 22:52:19.687 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-21 22:52:19.687 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-21 22:52:19.688 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-21 22:52:19.750 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-21 22:52:19.751 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 785 ms
+2020-12-21 22:52:20.058 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-21 22:52:20.199 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-21 22:52:20.258 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-21 22:52:20.264 [main] INFO  com.hsy.dbexp.DbexpApplication - Started DbexpApplication in 1.69 seconds (JVM running for 2.454)
+2020-12-21 22:52:26.270 [http-nio-8090-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-21 22:52:26.271 [http-nio-8090-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-21 22:52:26.271 [http-nio-8090-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2020-12-21 22:52:26.331 [http-nio-8090-exec-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-21 23:07:58.519 [main] INFO  com.hsy.dbexp.DbexpApplication - Starting DbexpApplication using Java 1.8.0_231 on LAPTOP-GDCB5BAF with PID 27116 (F:\JavaProjects\dbexp\target\classes started by HSY in F:\JavaProjects\dbexp)
+2020-12-21 23:07:58.524 [main] INFO  com.hsy.dbexp.DbexpApplication - No active profile set, falling back to default profiles: default
+2020-12-21 23:07:59.609 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-21 23:07:59.617 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-21 23:07:59.617 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-21 23:07:59.617 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-21 23:07:59.706 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-21 23:07:59.706 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1115 ms
+2020-12-21 23:08:00.129 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-21 23:08:00.331 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-21 23:08:00.411 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-21 23:08:00.420 [main] INFO  com.hsy.dbexp.DbexpApplication - Started DbexpApplication in 2.53 seconds (JVM running for 3.71)
+2020-12-21 23:08:22.291 [http-nio-8090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-21 23:08:22.291 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-21 23:08:22.292 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2020-12-21 23:08:22.358 [http-nio-8090-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-21 23:08:42.781 [main] INFO  com.hsy.dbexp.DbexpApplication - Starting DbexpApplication using Java 1.8.0_231 on LAPTOP-GDCB5BAF with PID 24596 (F:\JavaProjects\dbexp\target\classes started by HSY in F:\JavaProjects\dbexp)
+2020-12-21 23:08:42.785 [main] INFO  com.hsy.dbexp.DbexpApplication - No active profile set, falling back to default profiles: default
+2020-12-21 23:08:43.809 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-21 23:08:43.816 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-21 23:08:43.816 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-21 23:08:43.816 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-21 23:08:43.901 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-21 23:08:43.901 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1046 ms
+2020-12-21 23:08:44.351 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-21 23:08:44.625 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-21 23:08:44.644 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-21 23:08:44.653 [main] INFO  com.hsy.dbexp.DbexpApplication - Started DbexpApplication in 2.525 seconds (JVM running for 3.666)
+2020-12-21 23:08:48.265 [http-nio-8090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-21 23:08:48.265 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-21 23:08:48.266 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2020-12-21 23:08:48.338 [http-nio-8090-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited

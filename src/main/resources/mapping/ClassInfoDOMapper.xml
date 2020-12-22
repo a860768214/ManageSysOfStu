@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hsy.dbexp.dao.ClassInfoDOMapper">
+  <resultMap id="BaseResultMap" type="com.hsy.dbexp.dataobject.ClassInfoDO">
+    <id column="class_id" jdbcType="INTEGER" property="classId" />
+    <result column="class_name" jdbcType="VARCHAR" property="className" />
+  </resultMap>
+  <resultMap id="ClassGradeMap" type="com.hsy.dbexp.controller.viewobject.ClassGradeVO">
+    <result column="class_name" jdbcType="VARCHAR" property="cname" />
+    <result column="student_name" jdbcType="VARCHAR" property="sname" />
+    <result column="class_grade" jdbcType="FLOAT" property="grade" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    class_id, class_name
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from t_classinfo
+    where class_id = #{classId,jdbcType=INTEGER}
+  </select>
+  <!--  hsy-->
+  <select id="selectAll" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from t_classinfo
+  </select>
+
+  <select id="getClassGarde" parameterType="java.lang.String" resultMap="ClassGradeMap">
+    SELECT t_classinfo.class_name,t_student_info.student_name,t_grade.class_grade from t_grade INNER JOIN t_student_info on t_grade.student_id=t_student_info.student_id INNER JOIN t_classinfo ON t_grade.class_id=t_classinfo.class_id
+    where t_classinfo.class_name= #{cname,jdbcType=VARCHAR}
+  </select>
+
+  <select id="selectByName" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from t_classinfo
+    where class_name=#{name,jdbcType=VARCHAR}
+  </select>
+  <!--  hsy-->
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from t_classinfo
+    where class_id = #{classId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.hsy.dbexp.dataobject.ClassInfoDO" keyProperty="classId" useGeneratedKeys="true">
+    insert into t_classinfo (class_id, class_name)
+    values (#{classId,jdbcType=INTEGER}, #{className,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.hsy.dbexp.dataobject.ClassInfoDO" keyProperty="classId" useGeneratedKeys="true">
+    insert into t_classinfo
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="classId != null">
+        class_id,
+      </if>
+      <if test="className != null">
+        class_name,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="classId != null">
+        #{classId,jdbcType=INTEGER},
+      </if>
+      <if test="className != null">
+        #{className,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.hsy.dbexp.dataobject.ClassInfoDO">
+    update t_classinfo
+    <set>
+      <if test="className != null">
+        class_name = #{className,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where class_id = #{classId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.hsy.dbexp.dataobject.ClassInfoDO">
+    update t_classinfo
+    set class_name = #{className,jdbcType=VARCHAR}
+    where class_id = #{classId,jdbcType=INTEGER}
+  </update>
+</mapper>

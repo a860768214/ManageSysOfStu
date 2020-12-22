@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hsy.dbexp.dao.GradeDOMapper">
+  <resultMap id="BaseResultMap" type="com.hsy.dbexp.dataobject.GradeDO">
+    <id column="gid" jdbcType="INTEGER" property="gid" />
+    <result column="class_name" jdbcType="VARCHAR" property="className" />
+    <result column="class_grade" jdbcType="REAL" property="classGrade" />
+    <result column="class_id" jdbcType="INTEGER" property="classId" />
+    <result column="student_id" jdbcType="INTEGER" property="studentId" />
+  </resultMap>
+  <resultMap id="AvgGradeMap" type="com.hsy.dbexp.controller.viewobject.AvgGradeVO">
+    <result column="department_name" jdbcType="VARCHAR" property="dname" />
+    <result column="avg" jdbcType="FLOAT" property="avgGrade" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    gid, class_name, class_grade, class_id, student_id
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from t_grade
+    where gid = #{gid,jdbcType=INTEGER}
+  </select>
+
+<!--  hsy-->
+  <select id="selectAll" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from t_grade
+  </select>
+
+  <select id="getAvgGrade" resultMap="AvgGradeMap">
+    select t_department.department_name,avg(t_grade.class_grade) as avg from t_grade INNER JOIN t_student_info on t_student_info.student_id=t_grade.student_id INNER JOIN t_studentrelation on t_studentrelation.student_id=t_grade.student_id INNER JOIN t_department on t_department.department_id=t_studentrelation.department_id INNER JOIN t_classinfo on t_classinfo.class_id=t_grade.class_id
+    where t_classinfo.class_name=#{cname,jdbcType=VARCHAR} GROUP BY t_department.department_name
+  </select>
+
+<!--  hsy-->
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from t_grade
+    where gid = #{gid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.hsy.dbexp.dataobject.GradeDO" useGeneratedKeys="true" keyProperty="gid">
+    insert into t_grade (gid, class_name, class_grade, 
+      class_id, student_id)
+    values (#{gid,jdbcType=INTEGER}, #{className,jdbcType=VARCHAR}, #{classGrade,jdbcType=REAL}, 
+      #{classId,jdbcType=INTEGER}, #{studentId,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.hsy.dbexp.dataobject.GradeDO" useGeneratedKeys="true" keyProperty="gid">
+    insert into t_grade
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="gid != null">
+        gid,
+      </if>
+      <if test="className != null">
+        class_name,
+      </if>
+      <if test="classGrade != null">
+        class_grade,
+      </if>
+      <if test="classId != null">
+        class_id,
+      </if>
+      <if test="studentId != null">
+        student_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="gid != null">
+        #{gid,jdbcType=INTEGER},
+      </if>
+      <if test="className != null">
+        #{className,jdbcType=VARCHAR},
+      </if>
+      <if test="classGrade != null">
+        #{classGrade,jdbcType=REAL},
+      </if>
+      <if test="classId != null">
+        #{classId,jdbcType=INTEGER},
+      </if>
+      <if test="studentId != null">
+        #{studentId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.hsy.dbexp.dataobject.GradeDO">
+    update t_grade
+    <set>
+      <if test="className != null">
+        class_name = #{className,jdbcType=VARCHAR},
+      </if>
+      <if test="classGrade != null">
+        class_grade = #{classGrade,jdbcType=REAL},
+      </if>
+      <if test="classId != null">
+        class_id = #{classId,jdbcType=INTEGER},
+      </if>
+      <if test="studentId != null">
+        student_id = #{studentId,jdbcType=INTEGER},
+      </if>
+    </set>
+    where gid = #{gid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.hsy.dbexp.dataobject.GradeDO">
+    update t_grade
+    set class_name = #{className,jdbcType=VARCHAR},
+      class_grade = #{classGrade,jdbcType=REAL},
+      class_id = #{classId,jdbcType=INTEGER},
+      student_id = #{studentId,jdbcType=INTEGER}
+    where gid = #{gid,jdbcType=INTEGER}
+  </update>
+</mapper>
