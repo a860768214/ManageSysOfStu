@@ -9,11 +9,17 @@ import java.util.List;
 public interface StudentRelationDOMapper {
     int deleteByPrimaryKey(Integer rid);
 
+    int deleteBySid(Integer sid);
+
+    int deleteByDid(Integer did);
+
     int insert(StudentRelationDO record);
 
     int insertSelective(StudentRelationDO record);
 
     StudentRelationDO selectByPrimaryKey(Integer rid);
+
+    List<StudentRelationDO> selectByDid(Integer did);
 
     List<StudentRelationDO> selectAll();
 

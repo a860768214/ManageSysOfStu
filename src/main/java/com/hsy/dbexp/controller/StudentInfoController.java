@@ -1,6 +1,7 @@
 package com.hsy.dbexp.controller;
 
 import com.hsy.dbexp.dao.DepartmentDOMapper;
+import com.hsy.dbexp.dao.GradeDOMapper;
 import com.hsy.dbexp.dao.StudentInfoDOMapper;
 import com.hsy.dbexp.dao.StudentRelationDOMapper;
 import com.hsy.dbexp.dataobject.DepartmentDO;
@@ -23,6 +24,9 @@ public class StudentInfoController
 
     @Autowired
     private StudentRelationDOMapper studentRelationDOMapper;
+
+    @Autowired
+    private GradeDOMapper gradeDOMapper;
 
     @PostMapping("/insert")
     public CommonReturnType insert(@RequestParam("sname") String sname,
@@ -75,6 +79,10 @@ public class StudentInfoController
         try
         {
             StudentInfoDO studentInfoDO = studentInfoDOMapper.selectByPrimaryKey(Integer.parseInt(sid));
+
+            studentRelationDOMapper.deleteBySid(Integer.parseInt(sid));
+            gradeDOMapper.deleteBySid(Integer.parseInt(sid));
+
             studentInfoDOMapper.deleteByPrimaryKey(Integer.parseInt(sid));
             return CommonReturnType.create(studentInfoDO);
         }catch (Exception e)

@@ -27,7 +27,7 @@
   <select id="selectAll" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List" />
-    from t_department
+    from t_department having department_id>0
   </select>
 
   <select id="selectByName" parameterType="java.lang.String" resultMap="BaseResultMap">

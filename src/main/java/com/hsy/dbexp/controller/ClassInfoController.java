@@ -1,6 +1,7 @@
 package com.hsy.dbexp.controller;
 
 import com.hsy.dbexp.dao.ClassInfoDOMapper;
+import com.hsy.dbexp.dao.GradeDOMapper;
 import com.hsy.dbexp.dataobject.ClassInfoDO;
 import com.hsy.dbexp.dataobject.DepartmentDO;
 import com.hsy.dbexp.response.CommonReturnType;
@@ -15,7 +16,8 @@ public class ClassInfoController
     @Autowired
     private ClassInfoDOMapper classInfoDOMapper;
 
-
+    @Autowired
+    private GradeDOMapper gradeDOMapper;
 
     @PostMapping("/insert")
     public CommonReturnType insert(@RequestParam("class_name") String cname)
@@ -60,6 +62,8 @@ public class ClassInfoController
         try
         {
             ClassInfoDO classInfoDO = classInfoDOMapper.selectByPrimaryKey(Integer.parseInt(cid));
+
+            gradeDOMapper.deleteByCid(Integer.parseInt(cid));
             classInfoDOMapper.deleteByPrimaryKey(Integer.parseInt(cid));
             return CommonReturnType.create(classInfoDO);
         }catch (Exception e)

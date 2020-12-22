@@ -10,6 +10,10 @@ import java.util.List;
 public interface GradeDOMapper {
     int deleteByPrimaryKey(Integer gid);
 
+    int deleteBySid(Integer sid);
+
+    int deleteByCid(Integer cid);
+
     int insert(GradeDO record);
 
     int insertSelective(GradeDO record);

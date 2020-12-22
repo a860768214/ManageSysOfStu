@@ -10,7 +10,7 @@
   </resultMap>
   <resultMap id="AvgGradeMap" type="com.hsy.dbexp.controller.viewobject.AvgGradeVO">
     <result column="department_name" jdbcType="VARCHAR" property="dname" />
-    <result column="avg" jdbcType="FLOAT" property="avgGrade" />
+    <result column="avg" jdbcType="REAL" property="avgGrade" />
   </resultMap>
   <sql id="Base_Column_List">
     gid, class_name, class_grade, class_id, student_id
@@ -29,11 +29,21 @@
     from t_grade
   </select>
 
+
   <select id="getAvgGrade" resultMap="AvgGradeMap">
     select t_department.department_name,avg(t_grade.class_grade) as avg from t_grade INNER JOIN t_student_info on t_student_info.student_id=t_grade.student_id INNER JOIN t_studentrelation on t_studentrelation.student_id=t_grade.student_id INNER JOIN t_department on t_department.department_id=t_studentrelation.department_id INNER JOIN t_classinfo on t_classinfo.class_id=t_grade.class_id
     where t_classinfo.class_name=#{cname,jdbcType=VARCHAR} GROUP BY t_department.department_name
   </select>
 
+  <delete id="deleteBySid" parameterType="java.lang.Integer">
+    delete from t_grade
+    where student_id = #{sid,jdbcType=INTEGER}
+  </delete>
+
+  <delete id="deleteByCid" parameterType="java.lang.Integer">
+    delete from t_grade
+    where class_id = #{cid,jdbcType=INTEGER}
+  </delete>
 <!--  hsy-->
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from t_grade
@@ -42,7 +52,7 @@
   <insert id="insert" parameterType="com.hsy.dbexp.dataobject.GradeDO" useGeneratedKeys="true" keyProperty="gid">
     insert into t_grade (gid, class_name, class_grade, 
       class_id, student_id)
-    values (#{gid,jdbcType=INTEGER}, #{className,jdbcType=VARCHAR}, #{classGrade,jdbcType=REAL}, 
+    values (#{gid,jdbcType=INTEGER}, #{className,jdbcType=VARCHAR}, #{classGrade,jdbcType=REAL},
       #{classId,jdbcType=INTEGER}, #{studentId,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="com.hsy.dbexp.dataobject.GradeDO" useGeneratedKeys="true" keyProperty="gid">

@@ -24,6 +24,7 @@
 <!--  hsy-->
   <select id="selectAll" parameterType="java.lang.Integer" resultMap="VOMap">
     select t_student_info.student_id,t_student_info.student_name,t_department.department_name from t_student_info inner join t_studentrelation on t_student_info.student_id=t_studentrelation.student_id INNER JOIN t_department on t_studentrelation.department_id=t_department.department_id
+    order by t_student_info.student_id asc
   </select>
 
   <select id="selectByName" parameterType="java.lang.String" resultMap="BaseResultMap">

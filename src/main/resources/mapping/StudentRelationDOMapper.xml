@@ -21,6 +21,25 @@
     <include refid="Base_Column_List" />
     from t_studentrelation
   </select>
+
+  <select id="selectByDid" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from t_studentrelation
+    where department_id=#{did,jdbcType=INTEGER}
+  </select>
+
+
+
+  <delete id="deleteBySid" parameterType="java.lang.Integer">
+    delete from t_studentrelation
+    where student_id = #{sid,jdbcType=INTEGER}
+  </delete>
+
+  <delete id="deleteByDid" parameterType="java.lang.Integer">
+    delete from t_studentrelation
+    where department_id = #{did,jdbcType=INTEGER}
+  </delete>
 <!--  hsy-->
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from t_studentrelation

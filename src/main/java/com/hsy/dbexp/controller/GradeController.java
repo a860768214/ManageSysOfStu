@@ -50,6 +50,9 @@ public class GradeController
 
             GradeDO gradeDO = new GradeDO();
             gradeDO.setClassName(classname);
+
+            System.out.println(new Float(cgrade));
+
             gradeDO.setClassGrade(new Float(cgrade));
             gradeDO.setClassId(classInfoDO.getClassId());
             gradeDO.setStudentId(Integer.parseInt(sid));
@@ -68,7 +71,6 @@ public class GradeController
     {
         try
         {
-            System.out.println(gid+":"+cgrade);
             GradeDO gradeDO = gradeDOMapper.selectByPrimaryKey(Integer.parseInt(gid));
             gradeDO.setClassGrade(new Float(cgrade));
 

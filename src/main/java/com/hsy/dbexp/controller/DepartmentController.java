@@ -1,7 +1,12 @@
 package com.hsy.dbexp.controller;
 
 import com.hsy.dbexp.dao.DepartmentDOMapper;
+import com.hsy.dbexp.dao.GradeDOMapper;
+import com.hsy.dbexp.dao.StudentInfoDOMapper;
+import com.hsy.dbexp.dao.StudentRelationDOMapper;
 import com.hsy.dbexp.dataobject.DepartmentDO;
+import com.hsy.dbexp.dataobject.GradeDO;
+import com.hsy.dbexp.dataobject.StudentRelationDO;
 import com.hsy.dbexp.response.CommonReturnType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -16,7 +21,11 @@ public class DepartmentController
     @Autowired
     private DepartmentDOMapper departmentDOMapper;
 
+    @Autowired
+    private StudentInfoDOMapper studentInfoDOMapper;
 
+    @Autowired
+    private StudentRelationDOMapper studentRelationDOMapper;
 
     @PostMapping(value = "/insert")
     public CommonReturnType insert(@RequestParam("department_name") String dname)
@@ -59,7 +68,16 @@ public class DepartmentController
     {
         try
         {
+
             DepartmentDO departmentDO = departmentDOMapper.selectByPrimaryKey(Integer.parseInt(did));
+            List<StudentRelationDO> studentRelationDOS = studentRelationDOMapper.selectByDid(Integer.parseInt(did));
+
+            for(StudentRelationDO t:studentRelationDOS)
+            {
+                t.setDepartmentId(0);
+                studentRelationDOMapper.updateByPrimaryKey(t);
+            }
+
             departmentDOMapper.deleteByPrimaryKey(Integer.parseInt(did));
             return CommonReturnType.create(departmentDO);
         }catch (Exception e)
