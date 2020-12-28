@@ -102,6 +102,7 @@ public class StudentInfoController
             return CommonReturnType.create(null, "unknown_error");
         }
     }
+
     @GetMapping("/list")
     public CommonReturnType list()
     {
